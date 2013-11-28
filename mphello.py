@@ -11,8 +11,7 @@ def hello_world(request, model):
     return "Hello world!"
 
 if __name__ == '__main__':
-    morepath.setup()
-    config = morepath.Config()
+    config = morepath.setup()
     config.scan()
     config.commit()
     app.run()
