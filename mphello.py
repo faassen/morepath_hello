@@ -7,7 +7,7 @@ class Root(object):
     pass
 
 @app.view(model=Root)
-def hello_world(request, model):
+def hello_world(self, request):
     return "Hello world!"
 
 if __name__ == '__main__':
