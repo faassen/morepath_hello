@@ -2,7 +2,7 @@ import morepath
 
 app = morepath.App()
 
-@app.model(path='')
+@app.path(path='')
 class Root(object):
     pass
 
