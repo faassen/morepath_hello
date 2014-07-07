@@ -1,6 +1,7 @@
 import morepath
 
-app = morepath.App(name='Hello')
+class app(morepath.App):
+    pass
 
 @app.path(path='')
 class Root(object):
@@ -14,4 +15,4 @@ if __name__ == '__main__':
     config = morepath.setup()
     config.scan()
     config.commit()
-    morepath.run(app)
+    morepath.run(app())
